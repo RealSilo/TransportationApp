@@ -7,7 +7,7 @@ Offline first react app
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-  > git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
+  > git clone git@github.com:RealSilo/TransportationApp.git
   > cd ReduxSimpleStarter
   > npm install
   > npm start
