@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var OfflinePlugin = require('offline-plugin');
 
 module.exports = {
   entry: [
@@ -29,7 +30,8 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    })
+    }),
+    new OfflinePlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

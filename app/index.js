@@ -25,6 +25,7 @@ class App extends Component {
   }
 
   fetchingAPI(departureStation, arrivalStation) {
+    //console.log(navigator.userAgent);
     fetch("http://api.bart.gov/api/sched.aspx?cmd=depart&orig=" + departureStation + "&dest=" + arrivalStation + "&date=now&key=MW9S-E7SL-26DU-VV8V&b=0&a=4&l=0")
       .then(function(response) {
           //console.log(response.headers.get('Content-Type'));
@@ -58,13 +59,10 @@ class App extends Component {
     if (type === "depart") {
       this.fetchingAPI(selected, this.state.arrStation)
       this.setState({depStation: selected});
-      console.log(selected);
-      console.log(this.state.depStation);
     }
     else if (type === "arrive") {
       this.fetchingAPI(this.state.depStation, selected)
       this.setState({arrStation: selected});
-      console.log(this.state.depStation, selected);
     }
     //this.fetchingAPI(this.state.depStation, this.state.arrStation)
   }
@@ -84,3 +82,6 @@ class App extends Component {
 }
 
 ReactDOM.render(<App /> , document.querySelector('.container'));
+
+import { install } from 'offline-plugin/runtime';
+install();
