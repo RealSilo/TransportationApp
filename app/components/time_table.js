@@ -16,8 +16,8 @@ const TimeTable = ({schedules}) => {
                 <tr>
                   <th className="col-md-3">Departure Time</th>
                   <th className="col-md-3">Arrival Time</th>
-                  <th className="col-md-3">Duration</th>
-                  <th className="col-md-3">Line Num</th>
+                  <th className="col-md-3">Trip Duration</th>
+                  <th className="col-md-3">Used Lines</th>
                  </tr>
               </thead>
               <TimeList schedules={schedules} />       
