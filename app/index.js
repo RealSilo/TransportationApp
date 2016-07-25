@@ -42,10 +42,10 @@ class App extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col-md-5 col-md-offset-1 search-bar">
+          <div className="col-md-5 col-md-offset-1 col-xs-6 search-bar">
             <SelectDepart onSelectedChange={selected => this.reRunFetching(selected, "depart")}/>
           </div>
-          <div className="col-md-5 search-bar">
+          <div className="col-md-5 col-xs-6 search-bar">
             <SelectArrive onSelectedChange={selected => this.reRunFetching(selected, "arrive")}/>
           </div>
         </div>

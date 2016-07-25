@@ -9,7 +9,7 @@ const TimeTable = ({schedules}) => {
   return (
     <div>
       <div className="row table-row">
-        <div className="col-md-10 col-md-offset-1">
+        <div className="col-md-10 col-md-offset-1 col-xs-12">
           <div className="panel panel-default">
             <table className="table table-bordered">
               <thead>
@@ -25,7 +25,11 @@ const TimeTable = ({schedules}) => {
           </div>
         </div>
       </div>
-      <div>Note: BART API only allows to fetch 4 trips after the specified time.</div>
+      <div className="row">
+        <div className="col-md-10 col-md-offset-1 col-xs-12">
+          <div>Note: BART API only allows to fetch 4 trips after the specified time.</div>
+        </div>
+      </div>
     </div>
   );
 }
