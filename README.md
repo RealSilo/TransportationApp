@@ -8,7 +8,7 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 ```
   > git clone git@github.com:RealSilo/TransportationApp.git
-  > cd ReduxSimpleStarter
+  > cd TransportationApp
   > npm install
   > npm start
 ```

@@ -10,7 +10,7 @@ class SelectArrive extends Component {
   render() {
     return (
       <div>
-        <h4>Choose an arrival train station</h4>
+        <h4>Choose an arrival station</h4>
         <select className='form-control'
           value={this.state.selected}
           onChange={event => this.onInputChange(event.target.value)}>
