@@ -28,7 +28,7 @@ const TimeItem = ({schedule}) => {
 const parsingDuration = (depTime, arrTime) => {
   const formattedDepTime = moment(depTime, "hh:mm a");
   const formattedArrTime = moment(arrTime, "hh:mm a");
-  return moment(formattedArrTime - formattedDepTime).format("mm");
+  return formattedArrTime.diff(formattedDepTime, 'minutes');
 }
 
 const extractLines = (schedule) => {
