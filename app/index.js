@@ -56,17 +56,17 @@ class App extends Component {
 
   reRunFetching(selected, type) {
     if (type === "depart") {
-      //this.fetchingAPI(selected, this.state.arrStation)
+      this.fetchingAPI(selected, this.state.arrStation)
       this.setState({depStation: selected});
       console.log(selected);
       console.log(this.state.depStation);
     }
     else if (type === "arrive") {
-      //this.fetchingAPI(this.state.depStation, selected)
+      this.fetchingAPI(this.state.depStation, selected)
       this.setState({arrStation: selected});
       console.log(this.state.depStation, selected);
     }
-    this.fetchingAPI(this.state.depStation, this.state.arrStation)
+    //this.fetchingAPI(this.state.depStation, this.state.arrStation)
   }
 
   parsingXML(responseXML) {
