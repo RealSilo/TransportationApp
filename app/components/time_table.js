@@ -7,29 +7,18 @@ const TimeTable = ({schedules}) => {
   }
 
   return (
-    <div>
-      <div className="row table-row">
-        <div className="col-md-10 col-md-offset-1 col-xs-12">
-          <div className="panel panel-default">
-            <table className="table table-bordered">
-              <thead>
-                <tr>
-                  <th className="col-md-3">Departure Time</th>
-                  <th className="col-md-3">Arrival Time</th>
-                  <th className="col-md-3">Trip Duration</th>
-                  <th className="col-md-3">Used Lines</th>
-                 </tr>
-              </thead>
-              <TimeList schedules={schedules} />       
-            </table>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-10 col-md-offset-1 col-xs-12">
-          <div>Note: BART API only allows to fetch 4 trips after the specified time.</div>
-        </div>
-      </div>
+    <div className="panel panel-default">
+      <table className="table table-bordered">
+        <thead>
+          <tr>
+            <th className="col-md-3">Departure Time</th>
+            <th className="col-md-3">Arrival Time</th>
+            <th className="col-md-3">Trip Duration</th>
+            <th className="col-md-3">Used Lines</th>
+           </tr>
+        </thead>
+        <TimeList schedules={schedules} />       
+      </table>
     </div>
   );
 }

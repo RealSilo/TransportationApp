@@ -1,4 +1,5 @@
 /node_modules
+/appcache
 bundle.js
 npm-debug.log
 

@@ -3,7 +3,7 @@ import Moment from 'moment';
 var moment = require('moment');
 
 const TimeItem = ({schedule}) => {
-  //const schedule = props.schedule;
+  //const schedule = this.props.schedule;
   const duration = parsingDuration(schedule.getAttribute("origTimeMin"), schedule.getAttribute("destTimeMin"));
   const usedLines = extractLines(schedule);
 

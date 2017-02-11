@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 
-class SelectDepart extends Component {
+class SelectStation extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { selected: "sfia" };
   }
 
   render() {
     return (
       <div>
-        <h4>Choose a departure station</h4>
         <select className='form-control'
-          value={this.state.selected}
+          value={this.props.station}
           onChange={event => this.onInputChange(event.target.value)}>
           <option value="12th">12th St. Oakland City Center</option>
           <option value="16th">16th St. Mission (SF)</option>
@@ -65,9 +62,8 @@ class SelectDepart extends Component {
   }
 
   onInputChange(selected) {
-    this.setState({selected});
     this.props.onSelectedChange(selected);
   }
 }
 
-export default SelectDepart;
+export default SelectStation;
