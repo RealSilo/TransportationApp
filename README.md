@@ -2,9 +2,7 @@
 
 Udacity Senior Front-end developer Nanodegree course
 
-Offline first react app
-
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Checkout this repo, install dependencies, then start the server
 
 ```
   > git clone git@github.com:RealSilo/TransportationApp.git
